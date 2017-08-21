@@ -1,17 +1,37 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 	<title>高德地图</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+	</style>
 </head>
 <body>
 	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=4387ae86febb83296bc66abda291906e"></script>
-	<div id="container" style="width:500px; height:300px"></div>
+	<div style="width: 100%;height: 300px;">
+		没什么用，为了测试地图。。。。。
+	</div>
+	<div id="container"></div>
 	<script type="text/javascript">
+		function a(){
+			let h=window.screen.height;
+			let w=window.screen.width;
+			console.log("height:"+h+"width:"+w);
+			var el=document.getElementById('container');
+			console.log(el);
+			el.style.width=w+'px';
+			el.style.height=h+'px';
+		}
+		window.onload=a;
 		var map = new AMap.Map('container',{
 		    zoom: 16,
+		    scrollWheel:true,
 		    center: [121.410000,28.65688]
 		});
 		var marker = new AMap.Marker({
@@ -19,7 +39,14 @@
 		    map:map//创建时直接赋予map属性
 		});
 		marker.setMap(map);
-
+		//监听地图的click事件，点击地图，允许鼠标滚轮缩小或放大地图
+                var clickEventListener = map.on('click', function() {
+                map.setStatus({scrollWheel:true});
+            });
+            //监听地图的mouseout事件，鼠标移出地图区域，鼠标滚轮缩小或放大地图功能取消
+            var mouseOutEventListener = map.on('mouseout',function(){
+            map.setStatus({scrollWheel:false});
+            });
 		// 工具控件
 	AMap.plugin(['AMap.ToolBar','AMap.MapType','AMap.Geolocation'],function(){
 	    //创建并添加工具条控件
@@ -29,15 +56,6 @@
 	    map.addControl(toolBar);
 	    map.addControl(mapType);
 	    map.addControl(Geolocation);
-	    //创建高级信息窗体并在指定位置打开
-	    // var infowindow = new AMap.AdvancedInfoWindow({
-	    //   // content: '<div class="info-title">高德地图</div><div class="info-content">'+
-	    //   //       '<img src="http://webapi.amap.com/images/amap.jpg">'+
-	    //   //       '高德是中国领先的数字地图内容、导航和位置服务解决方案提供商。<br>'+
-	    //   //       '<a target="_blank" href="http://mobile.amap.com/">点击下载高德地图</a></div>',
-	    //   // offset: new AMap.Pixel(0, -30)
-	    // });
-	    // infowindow.open(map,[121.410000,28.65688]);
 	})
 	 var info = new AMap.InfoWindow({
         content: '<div class="title">公司地址</div><div class="content">'+
