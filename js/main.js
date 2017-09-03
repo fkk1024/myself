@@ -90,7 +90,7 @@ function fixSizes() {
 }
 
 // 联系方式切换
-$(()=>{
+//$(()=>{
 	$('#contact .social').on('click','.iconfont',function(e){
 		var index=$(this).index();
 		var data=[];
@@ -173,4 +173,4 @@ $(()=>{
 			})
 		}
 	})
-})
+//})
