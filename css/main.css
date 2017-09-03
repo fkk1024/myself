@@ -1,5 +1,5 @@
 /* ==========================================================================
-   General
+   fkk//全局样式
    ========================================================================== */
 
 * {
@@ -95,13 +95,13 @@ h1, h2, h3, h4, h5, h6, p {
 .row [class$="-content"] {
     overflow: hidden;
 }
-.copyrights{
-	text-indent:-9999px;
-	height:0;
-	line-height:0;
-	font-size:0;
-	overflow:hidden;
-}
+// .copyrights{
+// 	text-indent:-9999px;
+// 	height:0;
+// 	line-height:0;
+// 	font-size:0;
+// 	overflow:hidden;
+// }
 @font-face {
     font-family: 'icon';
     src:url('../fonts/icon.eot');
@@ -115,7 +115,35 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* ==========================================================================
-   Buttons
+   滚动条样式
+   ========================================================================== */
+    ::-webkit-scrollbar {  
+      width: 0px;  
+      // width: 5px;  
+      height: 15px;  
+    }  
+      
+    ::-webkit-scrollbar-track,  
+    ::-webkit-scrollbar-thumb {  
+      border-radius: 999px;  
+      // border: 5px solid transparent;  
+    }  
+      
+    ::-webkit-scrollbar-track {  
+      box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;  
+    }  /* 滚动条的滑轨背景颜色 */
+      
+    ::-webkit-scrollbar-thumb {  
+      min-height: 20px;  
+      background-clip: content-box;  
+      box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;  
+    }  /* 滑块颜色 */ 
+      
+    ::-webkit-scrollbar-corner {  
+      background: transparent;  
+    }  /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+/* ==========================================================================
+   按钮
    ========================================================================== */
 
 .but {
@@ -175,7 +203,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   Header
+   头部。以取消
    ========================================================================== */
 
 .menu {
@@ -202,7 +230,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu ul {
     width: 100%;
-    /*height: 100%;*/
     text-align: left;
     padding-top: 130px;
 }
@@ -350,22 +377,9 @@ h1, h2, h3, h4, h5, h6, p {
     color: #F10061;
 }
 
-/*.menu-icon p:before {
-    content: 'Menu';
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-out;
-       -moz-transition: opacity 0.2s ease-out;
-         -o-transition: opacity 0.2s ease-out;
-            transition: opacity 0.2s ease-out;    
-}
-
-.menu-icon.close p:before {
-    content: 'Menu';
-    opacity: 0;
-}*/
 
 /* ==========================================================================
-   All Sections
+   公共部分
    ========================================================================== */
 
 #about,
@@ -376,20 +390,31 @@ h1, h2, h3, h4, h5, h6, p {
     overflow: hidden;
     padding: 150px 0;
 }
-
+#contact .social .iconfont{
+    cursor: pointer;
+}
 .about-content h3,
 .services-content h3,
 .work-content h3,
 .contact-content h3,
 .footer h3 {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: '小篆', Helvetica, Arial, sans-serif;
     font-size: 2.25rem;
     font-size: 27px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 45px;
+    margin-bottom: 0;
     color: #000;
+}
+.about-content p,
+.services-content p,
+.work-content p,
+.contact-content p,
+.footer p {
+    font-family: '手写', Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    color: #456;
 }
 
 .about-content p,
@@ -429,11 +454,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .home-title h1 {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: '小篆', Helvetica, Arial, sans-serif;
     font-size: 4rem;
     font-size: 64px;
     font-weight: 700;
-    color: #fff;
+    color: #123;
     letter-spacing: 3px;
     margin-bottom: 9px;
     opacity: 1;
@@ -443,7 +468,9 @@ h1, h2, h3, h4, h5, h6, p {
          -o-transition: opacity 0.2s 1.2s ease-out;
             transition: opacity 0.2s 1.2s ease-out;    
 }
-
+.home-title p{
+    font-family: '手写';
+}
 .home-title h2 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 1.3125rem;
@@ -474,7 +501,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   About
+    与我相关
    ========================================================================== */
 
 #about {
@@ -487,7 +514,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   Services
+   能力
    ========================================================================== */
 
 #services {
@@ -519,7 +546,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   Work
+   工作经历
    ========================================================================== */
 
 #work {
@@ -578,7 +605,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   Contact
+   联系我
    ========================================================================== */
 
 /*.social [class^="icon-"],
@@ -641,7 +668,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   Footer
+   底部
    ========================================================================== */
 
 #footer {
@@ -673,7 +700,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   Media Queries
+   自定义媒体查询
    ========================================================================== */
 
 .col {
@@ -689,7 +716,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-    /* 1. 12 Column Grid 0px - 319px 
+    /* 1. 12  0px - 319px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -819,7 +846,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 2. 12 Column Grid 320px - 459px 
+    /* 2. 12  320px - 459px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -961,7 +988,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 3. 12 Column Grid 460px - 779px 
+    /* 3. 12  460px - 779px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -1085,7 +1112,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 4. 12 Column Grid 780px - 1199px 
+    /* 4. 12  780px - 1199px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -1170,7 +1197,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 5. 12 Column Grid 1200px - Infinity 
+    /* 5. 12  1200px以上 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%

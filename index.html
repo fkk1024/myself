@@ -3,53 +3,55 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <head>
-
-        <!-- Basics -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>.:: John Deo ::.</title>
-        <link name="author" href="humans.txt" />
-        <meta name="description" content="John Deo, UI / UX / Frontend">
+        <title>.:: 冯康凯 ::.</title>
 
-        <!-- Favicons -->
-        <link rel="shortcut icon" href="img/favicons/favicon.ico">
+        <!-- 网页logo设置 -->
+        <link rel="shortcut icon" href="img/favicons/fkk.ico">
 
-        <!-- Mobile -->
+        <!-- 移动端设置 -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
-        <!-- CSS -->
+        <!-- 字体 -->
+        <link rel='stylesheet' href='css/mineFonts.css'>
+        <link rel='stylesheet' href='http://at.alicdn.com/t/font_404229_b7zcvvsdcrcc8fr.css'>
+
+        <!-- CSS样式 -->
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        
+        <!-- 地图js -->
+        <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=4387ae86febb83296bc66abda291906e"></script>
 
-        <!-- Fonts -->
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'>
 
     </head>
     <body>   
 
         <div class="wrapper">
 
-            <header>
+            <!-- <header>
                 <a class="menu-icon jiji">
                     <span></span>
                 </a>
                 <nav class="menu visuallyhidden">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#work">My Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="map.html">map</a></li>
+                        <li><a href="#home">主页</a></li>
+                        <li><a href="#about">我</a></li>
+                        <li><a href="#work">工作经历</a></li>
+                        <li><a href="#contact">联系方式</a></li>
+                        <li><a href="map.html">地图功能</a></li>
                     </ul>
                 </nav>
-            </header>
+            </header> -->
 
             <section id="home" class="row">
                 <div class="overlay">
                     <div class="col home-title jiji">
-                        <h1>John Deo</h1>
-                        <h2>UI / UX / Frontend</h2>
-                        <a href="#" target="_blank" class="but">Download Resume</a>
+                        <h1>冯康凯</h1>
+                        <p>冯康凯</p>
+                        <h2>HTML / CSS / JavaScript</h2>
+                        <a href="#" target="_blank" class="but">下载简历</a>
                     </div>
                 </div>
             </section>
@@ -60,7 +62,8 @@
                         <h3
                             data-100="-webkit-transform: translateX(100px); opacity:0;"
                             data-500="-webkit-transform: translateX(0px); opacity:1;"
-                        >About me</h3>
+                        >关于我</h3>
+                        <p>关于我</p>
                     </div>
                     <div class="col empty">&nbsp;</div>
                     <div class="col about-description">
@@ -121,7 +124,7 @@
                 </div>
             </section>
 
-            <hr><div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+            <hr>
 
             <section id="work" class="row">
                 <div class="work-content page">
@@ -129,7 +132,8 @@
                         <h3
                             data-900="-webkit-transform: translateX(-100px); opacity:0;"
                             data-1300="-webkit-transform: translateX(0px); opacity:1;"
-                        >My latest work</h3>
+                        >工作经历</h3>
+                        <p>工作经历</p>
                     </div>
                     <div class="col empty">&nbsp;</div>
                     <div class="col work-description">
@@ -224,18 +228,23 @@
                         <h3
                             data-100="-webkit-transform: translateX(100px); opacity:0;"
                             data-500="-webkit-transform: translateX(0px); opacity:1;"
-                        >Get in touch</h3>
+                        >联系我</h3>
+                        <p>联系我</p>
                     </div>
                     <div class="col empty">&nbsp;</div>
                     <div class="col contact-description">
-                        <a href="#" class="but">hello@afrussel.com</a>
+                        <a href="http://mail.sina.com.cn/?from=mail" class="but">15958119316@sina.cn</a>
                     </div>
                     <div class="col empty">&nbsp;</div>
                     <div class="col span_12 social">
-                        <a class="icon-twitter" href="#" target="_blank"></a>
-                        <a class="icon-github" href="#" target="_blank"></a>
-                        <a class="icon-instagram" href="#" target="_blank"></a>
-                        <a class="icon-linkedin" href="#" target="_blank"></a>
+                        <i class="iconfont icon-weiXin-copy" href="####" target="_blank"></i>
+                        <i class="iconfont icon-shouji" href="#" target="_blank"></i>
+                        <i class="iconfont icon-socialgithuboutline" href="#" target="_blank"></i>
+                        <i class="iconfont icon-lianxidizhi" href="#" target="_blank"></i>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div id="showContainer">
+                        <!-- 显示点击相应的容器 -->
                     </div>
                 </div>
             </section>
@@ -243,7 +252,7 @@
             <footer id="footer" class="row">
                 <div class="footer-content page">
                     <div class="col f1">
-                        <p>© 2015 John Deo. Made with love.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                        <p>冯康凯&nbsp;&nbsp;2017年9月3日</p>
                     </div>
                 </div>
             </footer>
@@ -252,7 +261,7 @@
 
         <div class="loader"></div>
         
-        <!-- JavaScript -->
+        <!-- JS -->
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
         <script src="js/skrollr.js"></script>

@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family: '小篆';
+    src: url('../fonts/小篆.eot'); 
+    src: url('../fonts/小篆.eot?#iefix') format('embedded-opentype'), 
+             url('../fonts/小篆.woff') format('woff'), 
+             url('../fonts/小篆.ttf')  format('truetype'),
+             url('../fonts/小篆.svg#小篆') format('svg'); 
+}
+
+
+@font-face {
+    font-family: '手写';
+    src: url('../fonts/纤细手写体.eot'); 
+    src: url('../fonts/纤细手写体.eot?#iefix') format('embedded-opentype'), 
+             url('../fonts/纤细手写体.woff') format('woff'), 
+             url('../fonts/纤细手写体.ttf')  format('truetype'),
+             url('../fonts/纤细手写体.svg#纤细手写体') format('svg'); 
+}
+
+
+@font-face {
+    font-family: '苹果黑';
+    src: url('../fonts/苹果黑体-极细-简.eot'); 
+    src: url('../fonts/苹果黑体-极细-简.eot?#iefix') format('embedded-opentype'), 
+             url('../fonts/苹果黑体-极细-简.woff') format('woff'), 
+             url('../fonts/苹果黑体-极细-简.ttf')  format('truetype'),
+             url('../fonts/苹果黑体-极细-简.svg#苹果黑体-极细-简') format('svg'); 
+}
