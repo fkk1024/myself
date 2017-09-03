@@ -95,17 +95,16 @@ function fixSizes() {
 		var index=$(this).index();
 		var data=[];
 		var C=$('#showContainer');//取容器               
-		data[0]=`<img src="img/我的微信.jpg" style='width:150px;'>`;
-		data[1]=`<p>手机：15958119316</p>`;
-		data[2]=`<p>GitHub项目地址:https://github.com/fkk1024</p>`;
-		// data[3]=`<iframe src="map.html"></iframe>`;
+		data[0]="<img src="img/我的微信.jpg" style='width:150px;'>";
+		data[1]="<p>手机：15958119316</p>";
+		data[2]="<p>GitHub项目地址:https://github.com/fkk1024</p>";
+		// data[3]="<iframe src="map.html"></iframe>";
 		console.log($(this).index());
 		if (index===3) {
 			C.html("<div id='map'></div>");
 			let h='600';
 			// let w=window.screen.width;
 			var el=$('#map');
-			console.log(el);
 			el.css({
 				width:'100%',
 				height:h+'px'
