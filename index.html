@@ -248,11 +248,13 @@
                             </li>
                             <li>
                             <!-- 手机号码 -->
-                                <p>手机：15958119316</p>
+                                <p>手机</p>
+                                <p>15958119316</p>
                             </li>
                             <li>
                                 <!-- GitHub项目 -->
-                                <p>GitHub项目地址:https://github.com/fkk1024</p>
+                                <p>GitHub项目地址</p>
+                                <p>https://github.com/fkk1024</p>
                             </li>
                             <li>
                             <!-- 地图 -->
@@ -280,19 +282,14 @@
         <script src="js/modernizr-2.6.2.min.js"></script>
         <script src="js/skrollr.js"></script>
         <script src="js/main.js"></script>
+        <!-- 地图js -->
         <script type="text/javascript">
-            // C.html("<div id='map'></div>");
              let h='400';
-             // let w=window.screen.width;
              var el=$("#map");
              el.css({
-                 width:'100%',
+                 // width:'100%',
                  height:h+'px'
              })
-             // el.style.width=w+'px';
-             // el.style.height=h+'px';
-             // }
-             // window.onload=a;
              var map = new AMap.Map('map',{
                  zoom: 16,
                  scrollWheel:true,
@@ -333,7 +330,6 @@
                  'textAlign': 'center',
              }).children().find('#showContainer').css({
                  'marginTop':'20px'
-                 // 'height':'600px'
              })
         </script>
 

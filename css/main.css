@@ -502,6 +502,28 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
+    联系我
+   ========================================================================== */
+#showContainer ul li{
+    list-style: none;
+    display: none;
+    height: 210px;
+    line-height: 210px;
+}
+#showContainer ul li p{
+    padding: 0;
+    margin: 0;
+    height: 105px;
+    line-height: 105px;
+    font-size: 40px;
+}
+#showContainer ul li:nth-child(1){
+    display: block;
+}
+#showContainer ul li:nth-child(4){
+    height: 410px;
+}
+/* ==========================================================================
     与我相关
    ========================================================================== */
 
