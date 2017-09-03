@@ -91,16 +91,16 @@ function fixSizes() {
 
 // 联系方式切换
 //$(()=>{
-//	$("#contact .social").on("click",".iconfont",function(){
-//		var index=$(this).index();
-//		var data=[];
-//		var C=$("#showContainer");//取容器               
-//		data[0]="<img src='img/我的微信.jpg' style='width:150px;'>";
-//		data[1]="<p>手机：15958119316</p>";
-//		data[2]="<p>GitHub项目地址:https://github.com/fkk1024</p>";
-//		// data[3]="<iframe src="map.html"></iframe>";
-//		console.log($(this).index());
-//		if (index===3) {
+	$("#contact .social").on("click",".iconfont",function(){
+		var index=$(this).index();
+		var data=[];
+		var C=$("#showContainer");//取容器               
+		data[0]="<img src='img/我的微信.jpg' style='width:150px;'>";
+		data[1]="<p>手机：15958119316</p>";
+		data[2]="<p>GitHub项目地址:https://github.com/fkk1024</p>";
+		// data[3]="<iframe src="map.html"></iframe>";
+		console.log($(this).index());
+		if (index===3) {
 //			C.html("<div id='map'></div>");
 //			let h='600';
 //			// let w=window.screen.width;
@@ -155,21 +155,21 @@ function fixSizes() {
 //				'marginTop':'20px',
 //				'height':'600px'
 //			})
-//		}else{
-//			if (C.html()!=='') {
-//				C.html('');
-//			}
-//			$('#showContainer').html(data[index]);
-//			$('#contact').css({
-//				'textAlign': 'center',
-//				'paddingBottom':'10px'
-//			}).children().find('#showContainer').css({
-//				'marginTop':'20px',
-//				'height':'220px'
-//			}).children().css({
-//				'height':'200px',
-//				'lineHeight':'200px'
-//			})
-//		}
-//	})
+		}else{
+			if (C.html()!=='') {
+				C.html('');
+			}
+			$('#showContainer').html(data[index]);
+			$('#contact').css({
+				'textAlign': 'center',
+				'paddingBottom':'10px'
+			}).children().find('#showContainer').css({
+				'marginTop':'20px',
+				'height':'220px'
+			}).children().css({
+				'height':'200px',
+				'lineHeight':'200px'
+			})
+		}
+	})
 //})
