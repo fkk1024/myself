@@ -5,38 +5,38 @@ jQuery(document).ready(function($) {
 	// var windowWidth = $(window).width();
 
 	// Nav导航，以取消
-	// $('a[href*=#]:not([href=#])').click(function() {
-	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	//       var target = $(this.hash);
-	//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	//       if (target.length) {
-	//         $('html,body').animate({
-	//           scrollTop: target.offset().top
-	//         }, 500);
-	//         return false;
-	//       }
-	//     }
-	// });
+	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 500);
+	        return false;
+	      }
+	    }
+	});
 
- //    $(".menu-icon").click(function(e) {
- //    	if ($('.menu').hasClass("visuallyhidden")) {
-	// 		$('.menu').removeClass("visuallyhidden");
-	// 		$('.menu-icon').addClass("close");
-	// 	} else {
-	// 		$('.menu').addClass("visuallyhidden");
-	// 		$('.menu-icon').removeClass("close");
-	// 	}
- //    });
+    $(".menu-icon").click(function(e) {
+    	if ($('.menu').hasClass("visuallyhidden")) {
+			$('.menu').removeClass("visuallyhidden");
+			$('.menu-icon').addClass("close");
+		} else {
+			$('.menu').addClass("visuallyhidden");
+			$('.menu-icon').removeClass("close");
+		}
+    });
 
- //    $(".menu li a").click(function(e) {
- //    	if ($('.menu').hasClass("visuallyhidden")) {
-	// 		$('.menu').removeClass("visuallyhidden");
-	// 		$('.menu-icon').addClass("close");
-	// 	} else {
-	// 		$('.menu').addClass("visuallyhidden");
-	// 		$('.menu-icon').removeClass("close");
-	// 	}
- //    });
+    $(".menu li a").click(function(e) {
+    	if ($('.menu').hasClass("visuallyhidden")) {
+			$('.menu').removeClass("visuallyhidden");
+			$('.menu-icon').addClass("close");
+		} else {
+			$('.menu').addClass("visuallyhidden");
+			$('.menu-icon').removeClass("close");
+		}
+    });
 	// Nav
 
 	// 工作经历
