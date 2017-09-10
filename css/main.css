@@ -14,7 +14,7 @@ html {
 
 body {
     background-color: #fff;
-    font-size: 100%; /* 16px */
+    font-size: 100%; 
     line-height: normal;
     font-weight: 300;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -119,14 +119,12 @@ h1, h2, h3, h4, h5, h6, p {
    ========================================================================== */
     ::-webkit-scrollbar {  
       width: 0px;  
-      // width: 5px;  
       height: 15px;  
     }  
       
     ::-webkit-scrollbar-track,  
     ::-webkit-scrollbar-thumb {  
-      border-radius: 999px;  
-      // border: 5px solid transparent;  
+      border-radius: 999px;   
     }  
       
     ::-webkit-scrollbar-track {  
@@ -594,12 +592,17 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 100%;
     height: auto;
     border: 0;
+    height: 250px;
+    width: 370px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
     -ms-interpolation-mode: bicubic;
     vertical-align: middle;
 }
 
 .work-item-inside {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     color: #fff;    
     display: block;
     position: absolute;
