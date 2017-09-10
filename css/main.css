@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Lato', Helvetica, Arial, sans-serif;   
     font-weight: 300;
     font-size: 1rem;
+    cursor: pointer;
     font-size: 16px;    
     padding: 0 45px;
     line-height: 55px;
@@ -442,7 +443,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-attachment: fixed;
     position: relative;
     text-align: center;
-    z-index: -1;
 }
 
 .overlay {
@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     height: 105px;
     line-height: 105px;
-    font-size: 40px;
+    font-size: 20px;
 }
 #showContainer ul li:nth-child(1){
     display: block;
