@@ -67,6 +67,11 @@ $(window).load(function() {
 	$("body").css("overflow", "auto");
 	$(".home-title").removeClass("jiji");
 	$(".menu-icon").removeClass("jiji");
+	$('.work-item-inside-content').eq(4).children('a').css({
+	    'height': '30px',
+	    'lineHeight': '30px',
+	    'marginBottom': '10px'
+	})
 	
 });
 
