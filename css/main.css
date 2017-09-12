@@ -115,6 +115,40 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* ==========================================================================
+   加载框样式
+   ========================================================================== */
+   #loading{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 11111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #loading div{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #fff;
+        border-left:2px solid transparent;
+        border-right:2px solid transparent;
+    }
+    #loading div div{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        border-top:2px solid transparent;
+        border-bottom:2px solid transparent;
+    }
+/* ==========================================================================
    滚动条样式
    ========================================================================== */
     ::-webkit-scrollbar {  
