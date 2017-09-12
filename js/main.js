@@ -103,22 +103,3 @@ $("#contact .social").on("click",".iconfont",function(){
 	C.css('display','none').eq(index).css('display','block'); 
 })
 // 加载动画
-$(()=>{
-	var degOut=0;
-	var degIn=0;
-	var time = setInterval(function(){
-		degOut+=5;
-		degIn+=10;
-	 $('#loading .loadingOut').css({
-	 	'transform': 'rotate('+degOut+'deg)'
-	 })	;$('#loading .loadingIn').css({
-	 	'transform': 'rotate(-'+degIn+'deg)'
-	 })	;
-	},15)
-	window.onload=function(){
-		clearInterval(time);
-		$('#loading').css({
-			'zIndex':'-1'
-		})
-	}
-})
