@@ -22,6 +22,13 @@
         <script src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript">
             $(()=>{
+                $('body').append(`
+                    <div id="loading">
+                        <div class="loadingOut">
+                            <div class="loadingIn"></div>
+                        </div>
+                    </div>
+                    `)
                 var degOut=0;
                 var degIn=0;
                 var time = setInterval(function(){
@@ -45,12 +52,7 @@
 
 
     </head>
-    <body style="height: auto;">   
-        <div id="loading">
-            <div class="loadingOut">
-                <div class="loadingIn"></div>
-            </div>
-        </div>
+    <body style="height: auto;">  
         <div class="wrapper">
 
             <!-- <header>
@@ -178,7 +180,7 @@
                         data-1300="opacity:0;"
                         data-1400="opacity:1;"
                     >
-                        <img src="img/works/智慧水务展示平台.png" alt="">
+                        <img src="img/works/智慧水务展示平台.jpg" alt="">
                         <div class="work-item-inside">
                             <div class="work-item-inside-content">
                                 <h4>智慧水务展示平台</h4>
@@ -215,7 +217,7 @@
                         data-1300="opacity:0;"
                         data-1400="opacity:1;"
                     >
-                        <img src="img/works/毕业设计.png" alt="">
+                        <img src="img/works/毕业设计.jpg" alt="">
                         <div class="work-item-inside">
                             <div class="work-item-inside-content">
                                <h4>毕业设计</h4>
