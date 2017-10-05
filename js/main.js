@@ -97,9 +97,7 @@ function fixSizes() {
 // 联系方式切换
 $("#contact .social").on("click",".iconfont",function(){
 	var index=$(this).index();
-	console.log(index);
 	var C=$("#showContainer li");//取容器
-	console.log(C);
 	C.css('display','none').eq(index).css('display','block'); 
 })
 // 加载动画
